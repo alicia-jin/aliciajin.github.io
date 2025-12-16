@@ -147,6 +147,46 @@ color: #FFFFFF;
   text-align: left;
 }
 
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 </style>
 
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
@@ -161,9 +201,18 @@ color: #FFFFFF;
       <a href="/contact.html"class="logo">Contact ✉︎</a>
     </div>
 </div>
-  
-<h2>Welcome to my Portfolio</h2>
 
+<!-- Side navigation -->
+<div class="sidenav">
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+  
+<div class="main">
+<h2>Welcome to my Portfolio</h2>
+</div>
 <div class="footer">
   <ah style="color:white" style="font-size:11px" style="font-family:'Courier New'" >©2026 ALICIA JIN. ALL RIGHTS RESERVED.</ah>
   <a href="https://www.linkedin.com/in/alicia-jin-047b02192/" class='fab fa-linkedin' style='font-size:36px'> </a>
